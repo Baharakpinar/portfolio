@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/portfolio.css">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="logoDiv">
+            <a href="/index.html" class="logo">Bahar Akpınar</a>
+        </div>
+
+        <div class="navbarDiv">
+            <ul class="navlist">
+                <li><a href="/index.html#home">Home</a></li>
+                <li><a href="/index.html#about">About</a></li>
+                <li><a href="/index.html#skills">Skills</a></li>
+                <li><a href="/index.html#portfolio">Projects</a></li>
+                <li><a href="/index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="language-darkMode">
+            <!-- <div class="language">
+                <div class="language-icon">
+                    <i class="fa-solid fa-earth-asia"></i>
+                </div>
+                <div class="lang-dropdown">
+                    <div>Türkçe</div>
+                    <div>English</div>
+                </div>
+
+            </div> -->
+
+            <div class="darkMode">
+                <input type="checkbox" id="darkmode-toggle" />
+                <label for="darkmode-toggle"><!-- label alanına tıklanırsa bağlı olduğu input da tetiklenecek -->
+                </label>
+            </div>
+        </div>
+
+        <!-- Responsive için menü -->
+        <button id="menu-toggle" aria-label="Toggle menu">
+            <i id="menu-icon" class="fa-solid fa-bars"></i>
+        </button>
+
+    </header>
+
+
+    <!-- içerik -->
+    <div class="banner" id="banner"></div>
+    <div class="main">
+        <div class="pContent" id="pContent">
+            <div class="portfolio-details" id="portfolio-details"></div>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-title">
+                <img src="/pages/img/pngegg.png" alt="">
+                <h2>Recent Posts</h2>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- CONTACT -->
+
+    <section class="contact" id="contact">
+        <div class="section-header">
+            <div class="section-title">İletişime Geçin!</div>
+        </div>
+        <div class="contact-description">
+            <p>Geri bildirimlerinizi, yorumlarınıznızı, tasarımlarım hakkındaki fikir ve önerilerinizi benimle
+                paylaşabilirsiniz.</p>
+        </div>
+        <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                <input type="hidden" name="access_key" value="5dee6b36-fe20-42fc-9946-ae93f6c2e4ca">
+                <input type="text" name="name" placeholder="Adınız" class="contact-inputs" required>
+                <input type="email" name="email" placeholder="Email" class="contact-inputs" required>
+                <textarea name="message" placeholder="Mesajınız" class="contact-inputs" required></textarea>
+                <button type="submit">Gönder</button>
+            </form>
+
+            <div class="contact-right">
+                <img src="img/contact.png" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <script src="../js/portfolio.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

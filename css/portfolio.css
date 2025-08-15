@@ -1,0 +1,166 @@
+:root {
+    --main-color: #f2f2f2;
+    --second-color: #1E3A8A;
+    --header-color: #fff;
+    --accent-color: #1E3A8A;
+    --highlight-color: #d0cdd1;
+    --text-color: #413f3f;
+    --bg-color: #000;
+}
+
+.main {
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+
+}
+
+.pContent {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 50px;
+}
+
+.banner {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Resmi kırparak sığdır */
+    display: block;
+    /* Alt boşluğu engelle */
+}
+
+.portfolio-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    color: var(--bg-color);
+    margin-bottom: 20px;
+}
+
+.portfolio-item {
+    width: 100%;
+}
+
+.portfolio-item h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--bg-color);
+    margin-bottom: 15px;
+}
+
+.portfolio-item p {
+    font-size: 1.2rem;
+    color: var(--bg-color);
+    margin-bottom: 20px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+
+.sidebar {
+    height: 100%;
+    width: 500px;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #d0cdd1;
+}
+
+.sidebar-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.sidebar-title img {
+    width: 35px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.sidebar-title h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #413f3f;
+}
+
+.recentPost-content {
+    background: #f2f2f2;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.recentPost-category {
+    margin-bottom: 5px;
+}
+
+.recentPost-category span {
+    background: #1E3A8A;
+    padding: 3px;
+    border-radius: 5px;
+    color: #f2f2f2;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.recentContent-title h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #252525;
+    margin-bottom: 13px;
+
+}
+
+@media (max-width: 992px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        order: 2;
+    }
+
+    .pContent {
+        padding: 0;
+    }
+
+    .portfolio-details {
+        display: flex;
+        flex-direction: column;
+        padding: 0 25px;
+        text-align: center;
+    }
+
+    .portfolio-details .main-title,
+    .portfolio-details h3,
+    .portfolio-details p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
